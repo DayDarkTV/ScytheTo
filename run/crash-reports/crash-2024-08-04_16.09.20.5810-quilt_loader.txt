@@ -1,0 +1,858 @@
+---- Quilt Loader: Failed to load ----
+Date/Time: 2024/08/04 16:09:20.5850 [-0400]
+Quilt Loader Version: 0.26.4-beta.1
+
+-- Error 1 --
+
+Invalid 'quilt.mod.json' metadata file:[/GitHub/scytheto/build/resources/main;/GitHub/scytheto/build/classes/java/main]/quilt.mod.json
+
+org.quiltmc.json5.exception.ParseException: A license declared as a string id must be a valid SPDX identifier
+	at org.quiltmc.loader.impl.metadata.qmj.V1ModMetadataReader.readLicenseObject(V1ModMetadataReader.java:621)
+	at org.quiltmc.loader.impl.metadata.qmj.V1ModMetadataReader.readLicenses(V1ModMetadataReader.java:596)
+	at org.quiltmc.loader.impl.metadata.qmj.V1ModMetadataReader.readFields(V1ModMetadataReader.java:350)
+	at org.quiltmc.loader.impl.metadata.qmj.V1ModMetadataReader.read(V1ModMetadataReader.java:86)
+	at org.quiltmc.loader.impl.metadata.qmj.ModMetadataReader.read(ModMetadataReader.java:105)
+	at org.quiltmc.loader.impl.metadata.qmj.ModMetadataReader.read(ModMetadataReader.java:53)
+	at org.quiltmc.loader.impl.plugin.quilt.StandardQuiltPlugin.scan0(StandardQuiltPlugin.java:288)
+	at org.quiltmc.loader.impl.plugin.quilt.StandardQuiltPlugin.scanFolder(StandardQuiltPlugin.java:276)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.scanFolderWithPlugin(QuiltPluginManagerImpl.java:1984)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.scanFolderAsMod(QuiltPluginManagerImpl.java:1963)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.scanModFile0(QuiltPluginManagerImpl.java:2072)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.scanModFile(QuiltPluginManagerImpl.java:2035)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.lambda$scanClasspath$10(QuiltPluginManagerImpl.java:1291)
+	at org.quiltmc.loader.impl.discovery.ClasspathModCandidateFinder.findCandidates(ClasspathModCandidateFinder.java:101)
+	at org.quiltmc.loader.impl.discovery.ClasspathModCandidateFinder.findCandidatesStatic(ClasspathModCandidateFinder.java:59)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.scanClasspath(QuiltPluginManagerImpl.java:1277)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.runInternal(QuiltPluginManagerImpl.java:1250)
+	at org.quiltmc.loader.impl.plugin.QuiltPluginManagerImpl.run(QuiltPluginManagerImpl.java:760)
+	at org.quiltmc.loader.impl.QuiltLoaderImpl.runPlugins(QuiltLoaderImpl.java:598)
+	at org.quiltmc.loader.impl.QuiltLoaderImpl.setup(QuiltLoaderImpl.java:315)
+	at org.quiltmc.loader.impl.QuiltLoaderImpl.load(QuiltLoaderImpl.java:307)
+	at org.quiltmc.loader.impl.launch.knot.Knot.init(Knot.java:149)
+	at org.quiltmc.loader.impl.launch.knot.Knot.launch(Knot.java:78)
+	at org.quiltmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+-- Plugin State --
+
+Cycle number = 1
+Cycle Step = START
+
+Loaded Plugins (2):
+ - 'quilt_loader' (Builtin)
+ - 'quilted_fabric_loader' (Builtin)
+
+
+
+
+-- Mod Table --
+
+| Mod                                               | ID                                           | Version                     | Plugin                | Flags | File Hash (SHA-1)                        | File(s)                                                                                                                                                                                                                                                                         | Sub-File                                    |
+|---------------------------------------------------|----------------------------------------------|-----------------------------|-----------------------|-------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Minecraft                                         | minecraft                                    | 1.21                        | quilt_loader          | ..    | 67d4de6d7f95d89bcf5862995fb854ebaec02a34 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\minecraftMaven\net\minecraft\minecraft-merged-d10fde7a2b\1.21-org.quiltmc.quilt-mappings.1_21.1.21+build.12-v2\minecraft-merged-d10fde7a2b-1.21-org.quiltmc.quilt-mappings.1_21.1.21+build.12-v2.jar                                | /                                           |
+|                                                   |                                              |                             |                       |       | de8bc95660e1b2fe8793fd427a7a10dcec5b3ea7 | <user>\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\8.0.16\67d4de6d7f95d89bcf5862995fb854ebaec02a34\datafixerupper-8.0.16.jar                                                                                                                                   | /                                           |
+|                                                   |                                              |                             |                       |       | 73e324f2ee541493a5179abf367237faa782ed21 | <user>\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\6.0.54\de8bc95660e1b2fe8793fd427a7a10dcec5b3ea7\authlib-6.0.54.jar                                                                                                                                                 | /                                           |
+|                                                   |                                              |                             |                       |       |                                          | <user>\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.2.9\73e324f2ee541493a5179abf367237faa782ed21\brigadier-1.2.9.jar                                                                                                                                               | /                                           |
+| MixinExtras                                       | mixinextras                                  | 0.3.5                       | quilted_fabric_loader | ..    | 3b577be20ea942610b3045e4f0cd909fa415a9d3 | <user>\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-fabric\0.3.5\3b577be20ea942610b3045e4f0cd909fa415a9d3\mixinextras-fabric-0.3.5.jar                                                                                                                    |                                             |
+| MixinExtras                                       | mixinextras                                  | 0.3.5                       | quilted_fabric_loader | ..    | 42afa527138e9354e78d3c402617480bd7c91b29 | <user>\.gradle\caches\modules-2\files-2.1\org.quiltmc\quilt-loader\0.26.4-beta.1\42afa527138e9354e78d3c402617480bd7c91b29\quilt-loader-0.26.4-beta.1.jar                                                                                                                        | /META-INF/jars/mixinextras-fabric-0.3.5.jar |
+| MixinExtras                                       | mixinextras                                  | 0.3.5                       | quilted_fabric_loader | ..    | 42afa527138e9354e78d3c402617480bd7c91b29 | <user>\.gradle\caches\modules-2\files-2.1\org.quiltmc\quilt-loader\0.26.4-beta.1\42afa527138e9354e78d3c402617480bd7c91b29\quilt-loader-0.26.4-beta.1.jar                                                                                                                        | /META-INF/jars/mixinextras-fabric-0.3.5.jar |
+| MixinExtras                                       | mixinextras                                  | 0.3.5                       | quilted_fabric_loader | ..    | 3b577be20ea942610b3045e4f0cd909fa415a9d3 | <user>\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-fabric\0.3.5\3b577be20ea942610b3045e4f0cd909fa415a9d3\mixinextras-fabric-0.3.5.jar                                                                                                                    |                                             |
+| OpenJDK 64-Bit Server VM                          | java                                         | 21                          | quilt_loader          | ..    |                                          | C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot                                                                                                                                                                                                                          |                                             |
+| Quilt Base API                                    | quilt_base                                   | 10.0.0-alpha.1+1.21         | quilt_loader          | ..    | 1b5c3b4516392aadf17a882549e0ec122e8083a3 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\qsl\core\qsl_base\10.0.0-alpha.1+1.21\qsl_base-10.0.0-alpha.1+1.21.jar                                                                                   |                                             |
+| Quilt Crash Info                                  | quilt_crash_info                             | 10.0.0-alpha.1+1.21         | quilt_loader          | ..    | 7d1c17d163585d8585077956789c7b74ef2687c0 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\qsl\core\crash_info\10.0.0-alpha.1+1.21\crash_info-10.0.0-alpha.1+1.21.jar                                                                               |                                             |
+| Quilt Loader                                      | quilt_loader                                 | 0.26.4-beta.1               | quilt_loader          | ..    | 42afa527138e9354e78d3c402617480bd7c91b29 | <user>\.gradle\caches\modules-2\files-2.1\org.quiltmc\quilt-loader\0.26.4-beta.1\42afa527138e9354e78d3c402617480bd7c91b29\quilt-loader-0.26.4-beta.1.jar                                                                                                                        |                                             |
+| Quilt Loader                                      | quilt_loader                                 | 0.26.4-beta.1               | quilt_loader          | ..    | 42afa527138e9354e78d3c402617480bd7c91b29 | <user>\.gradle\caches\modules-2\files-2.1\org.quiltmc\quilt-loader\0.26.4-beta.1\42afa527138e9354e78d3c402617480bd7c91b29\quilt-loader-0.26.4-beta.1.jar                                                                                                                        |                                             |
+| Quilted Fabric API                                | quilted_fabric_api                           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 7a27f80918e958788406927082e6d8bef72c26f  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\quilted-fabric-api\11.0.0-alpha.3+0.100.7-1.21\quilted-fabric-api-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric API                                | quilted_fabric_api                           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 7a27f80918e958788406927082e6d8bef72c26f  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\quilted-fabric-api\11.0.0-alpha.3+0.100.7-1.21\quilted-fabric-api-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric API                                | quilted_fabric_api                           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 7a27f80918e958788406927082e6d8bef72c26f  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\quilted-fabric-api\11.0.0-alpha.3+0.100.7-1.21\quilted-fabric-api-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric API Base                           | quilted_fabric_api_base                      | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 7492f5c9887a53b8687c8189abc7cfe58c627a6  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-base\11.0.0-alpha.3+0.100.7-1.21\fabric-api-base-11.0.0-alpha.3+0.100.7-1.21.jar                                           |                                             |
+| Quilted Fabric API Base                           | quilted_fabric_api_base                      | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 7492f5c9887a53b8687c8189abc7cfe58c627a6  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-base\11.0.0-alpha.3+0.100.7-1.21\fabric-api-base-11.0.0-alpha.3+0.100.7-1.21.jar                                           |                                             |
+| Quilted Fabric API Lookup API (v1)                | quilted_fabric_api_lookup_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | ae27b789acd81867d26ef8f0b92b623830d86c79 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-lookup-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-api-lookup-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric API Lookup API (v1)                | quilted_fabric_api_lookup_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | ae27b789acd81867d26ef8f0b92b623830d86c79 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-lookup-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-api-lookup-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Biome API (v1)                     | quilted_fabric_biome_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 0b608c2c4ad316e055244adbd0d90023f3b985e9 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-biome-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-biome-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Biome API (v1)                     | quilted_fabric_biome_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 0b608c2c4ad316e055244adbd0d90023f3b985e9 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-biome-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-biome-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Block API (v1)                     | quilted_fabric_block_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 9e17008b37899b2555e386cc15fb308adb9a146  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-block-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Block API (v1)                     | quilted_fabric_block_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 9e17008b37899b2555e386cc15fb308adb9a146  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-block-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric BlockRenderLayer Registration (v1) | quilted_fabric_blockrenderlayer_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 1c3d5d375705a56266bff6b6736689b8841680d6 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-blockrenderlayer-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-blockrenderlayer-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric BlockRenderLayer Registration (v1) | quilted_fabric_blockrenderlayer_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 1c3d5d375705a56266bff6b6736689b8841680d6 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-blockrenderlayer-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-blockrenderlayer-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric BlockView API (v2)                 | quilted_fabric_block_view_api_v2             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c6b8ca8e98565693775f29d8c55cadd947a39aa5 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-view-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-block-view-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric BlockView API (v2)                 | quilted_fabric_block_view_api_v2             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c6b8ca8e98565693775f29d8c55cadd947a39aa5 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-view-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-block-view-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Client Tags                        | quilted_fabric_client_tags_api_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 077d9dfef97cb9572fcd6b609294e2e4408316f8 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-client-tags-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-client-tags-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Client Tags                        | quilted_fabric_client_tags_api_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 077d9dfef97cb9572fcd6b609294e2e4408316f8 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-client-tags-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-client-tags-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Command API (v1)                   | quilted_fabric_command_api_v1                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 71f5870cbc8a7781fd081977d7e376993dc9493  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Command API (v1)                   | quilted_fabric_command_api_v1                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 71f5870cbc8a7781fd081977d7e376993dc9493  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Command API (v2)                   | quilted_fabric_command_api_v2                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 4f0af6750e87b81972c270ce56c5eb4944c08059 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Command API (v2)                   | quilted_fabric_command_api_v2                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 4f0af6750e87b81972c270ce56c5eb4944c08059 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Commands (v0)                      | quilted_fabric_commands_v0                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b843dcf6c427f025e222c3c83b78dbe59d39b66b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-commands-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-commands-v0-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Commands (v0)                      | quilted_fabric_commands_v0                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b843dcf6c427f025e222c3c83b78dbe59d39b66b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-commands-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-commands-v0-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Content Registries (v0)            | quilted_fabric_content_registries_v0         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | f6c9cbeb043a2f1fa2dab15b891cbcf0e7f32303 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-content-registries-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-content-registries-v0-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Content Registries (v0)            | quilted_fabric_content_registries_v0         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | f6c9cbeb043a2f1fa2dab15b891cbcf0e7f32303 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-content-registries-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-content-registries-v0-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Convention Tags                    | quilted_fabric_convention_tags_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 3625cd85ab7596ab3de6462d45246476cecb1f4a | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Convention Tags                    | quilted_fabric_convention_tags_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 3625cd85ab7596ab3de6462d45246476cecb1f4a | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Convention Tags (v2)               | quilted_fabric_convention_tags_v2            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d2e40c4151875d2e13d3d7cb71bf4a140c73b9b7 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v2-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Convention Tags (v2)               | quilted_fabric_convention_tags_v2            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d2e40c4151875d2e13d3d7cb71bf4a140c73b9b7 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v2-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Crash Report Info (v1)             | quilted_fabric_crash_report_info_v1          | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | faa6b7f331c32cb38501e2d250a0d86f82aea7d7 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-crash-report-info-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-crash-report-info-v1-11.0.0-alpha.3+0.100.7-1.21.jar                   |                                             |
+| Quilted Fabric Crash Report Info (v1)             | quilted_fabric_crash_report_info_v1          | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | faa6b7f331c32cb38501e2d250a0d86f82aea7d7 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-crash-report-info-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-crash-report-info-v1-11.0.0-alpha.3+0.100.7-1.21.jar                   |                                             |
+| Quilted Fabric Data Attachment API (v1)           | quilted_fabric_data_attachment_api_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 410b3aa6229f891585c4481226d957bd27622068 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-attachment-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-attachment-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Data Attachment API (v1)           | quilted_fabric_data_attachment_api_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 410b3aa6229f891585c4481226d957bd27622068 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-attachment-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-attachment-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Data Generation API (v1)           | quilted_fabric_data_generation_api_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 5ecf629bc9a44bc6bc842ece385f3814789d9141 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-generation-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-generation-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Data Generation API (v1)           | quilted_fabric_data_generation_api_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 5ecf629bc9a44bc6bc842ece385f3814789d9141 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-generation-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-generation-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Dimensions API (v1)                | quilted_fabric_dimensions_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 3f2d72271999d23e0a5af673f937f6abdd12e51f | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-dimensions-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-dimensions-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Dimensions API (v1)                | quilted_fabric_dimensions_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 3f2d72271999d23e0a5af673f937f6abdd12e51f | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-dimensions-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-dimensions-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Entity Events (v1)                 | quilted_fabric_entity_events_v1              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 30a425d62bb71888ef71a31ab40c0013b5bd5e5c | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-entity-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-entity-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Entity Events (v1)                 | quilted_fabric_entity_events_v1              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 30a425d62bb71888ef71a31ab40c0013b5bd5e5c | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-entity-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-entity-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Events Interaction (v0)            | quilted_fabric_events_interaction_v0         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 12db4220927f6e28118d8666d127fed87cb33cae | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-events-interaction-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-events-interaction-v0-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Events Interaction (v0)            | quilted_fabric_events_interaction_v0         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 12db4220927f6e28118d8666d127fed87cb33cae | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-events-interaction-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-events-interaction-v0-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Game Rule API (v1)                 | quilted_fabric_game_rule_api_v1              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 23b204f6b299cb7c1ce89a86fb31bd5b7eb155af | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-game-rule-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-game-rule-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Game Rule API (v1)                 | quilted_fabric_game_rule_api_v1              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 23b204f6b299cb7c1ce89a86fb31bd5b7eb155af | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-game-rule-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-game-rule-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Game Test API (v1)                 | quilted_fabric_gametest_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | eaaed8e09449daa7061d4bbd6f95c3d39ff1a674 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-gametest-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-gametest-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Game Test API (v1)                 | quilted_fabric_gametest_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | eaaed8e09449daa7061d4bbd6f95c3d39ff1a674 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-gametest-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-gametest-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Item API (v1)                      | quilted_fabric_item_api_v1                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | def927d79cf62787ec400af908f8eee2d9dacb80 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Item API (v1)                      | quilted_fabric_item_api_v1                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | def927d79cf62787ec400af908f8eee2d9dacb80 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Item Group API (v1)                | quilted_fabric_item_group_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 549b4f3470e94fba2c55a2f553945e6ae48ca232 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-group-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-group-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Item Group API (v1)                | quilted_fabric_item_group_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 549b4f3470e94fba2c55a2f553945e6ae48ca232 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-group-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-group-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Key Binding API (v1)               | quilted_fabric_key_binding_api_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | a9c20cedeb01c35f636d245ca2f56c886818f2ac | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-key-binding-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-key-binding-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Key Binding API (v1)               | quilted_fabric_key_binding_api_v1            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | a9c20cedeb01c35f636d245ca2f56c886818f2ac | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-key-binding-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-key-binding-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Key Bindings (v0)                  | quilted_fabric_keybindings_v0                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2e9b8fd7223a1abdc3345ff4492b2cdfcea25998 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-keybindings-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-keybindings-v0-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Key Bindings (v0)                  | quilted_fabric_keybindings_v0                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2e9b8fd7223a1abdc3345ff4492b2cdfcea25998 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-keybindings-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-keybindings-v0-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Lifecycle Events (v1)              | quilted_fabric_lifecycle_events_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 80a676a6093825a83552dd7c7bfe7a0637af4517 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-lifecycle-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-lifecycle-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric Lifecycle Events (v1)              | quilted_fabric_lifecycle_events_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 80a676a6093825a83552dd7c7bfe7a0637af4517 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-lifecycle-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-lifecycle-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric Loot API (v2)                      | quilted_fabric_loot_api_v2                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2453172fb2cbff2f4d38258af1b93678e41cc4ac | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Loot API (v2)                      | quilted_fabric_loot_api_v2                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2453172fb2cbff2f4d38258af1b93678e41cc4ac | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Loot API (v3)                      | quilted_fabric_loot_api_v3                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b784241958fe16276bf1e822fc792d751f80a385 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v3\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v3-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Loot API (v3)                      | quilted_fabric_loot_api_v3                   | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b784241958fe16276bf1e822fc792d751f80a385 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v3\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v3-11.0.0-alpha.3+0.100.7-1.21.jar                                     |                                             |
+| Quilted Fabric Message API (v1)                   | quilted_fabric_message_api_v1                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | aa76891d585f8c139ce88b74f7852b1974fe3904 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-message-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-message-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Message API (v1)                   | quilted_fabric_message_api_v1                | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | aa76891d585f8c139ce88b74f7852b1974fe3904 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-message-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-message-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                               |                                             |
+| Quilted Fabric Model Loading API (v1)             | quilted_fabric_model_loading_api_v1          | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d975bf2fdc2634f6858d720a30d239e6b26fd6ab | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-model-loading-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-model-loading-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                   |                                             |
+| Quilted Fabric Model Loading API (v1)             | quilted_fabric_model_loading_api_v1          | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d975bf2fdc2634f6858d720a30d239e6b26fd6ab | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-model-loading-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-model-loading-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                   |                                             |
+| Quilted Fabric Networking API (v1)                | quilted_fabric_networking_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b07f323ccdf45c549e4e7e787ef7b77bcb1f0b93 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-networking-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-networking-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Networking API (v1)                | quilted_fabric_networking_api_v1             | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b07f323ccdf45c549e4e7e787ef7b77bcb1f0b93 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-networking-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-networking-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                         |                                             |
+| Quilted Fabric Object Builder API (v1)            | quilted_fabric_object_builder_api_v1         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 5c55f079ef97fd2b5714c732be4debc127560b41 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-object-builder-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-object-builder-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Object Builder API (v1)            | quilted_fabric_object_builder_api_v1         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 5c55f079ef97fd2b5714c732be4debc127560b41 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-object-builder-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-object-builder-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Particles (v1)                     | quilted_fabric_particles_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d739fa8efd8f4346776d18d68b2a228c92fd5d8  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-particles-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-particles-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Particles (v1)                     | quilted_fabric_particles_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d739fa8efd8f4346776d18d68b2a228c92fd5d8  | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-particles-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-particles-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Recipe API (v1)                    | quilted_fabric_recipe_api_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 635c66d7f36806a2ac99dbbf20663e826eb006dc | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-recipe-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-recipe-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Recipe API (v1)                    | quilted_fabric_recipe_api_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 635c66d7f36806a2ac99dbbf20663e826eb006dc | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-recipe-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-recipe-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Registry Sync (v0)                 | quilted_fabric_registry_sync_v0              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 547ccac74473d3814e80be92626d478c10ebd12b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-registry-sync-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-registry-sync-v0-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Registry Sync (v0)                 | quilted_fabric_registry_sync_v0              | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 547ccac74473d3814e80be92626d478c10ebd12b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-registry-sync-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-registry-sync-v0-11.0.0-alpha.3+0.100.7-1.21.jar                           |                                             |
+| Quilted Fabric Renderer - Indigo                  | quilted_fabric_renderer_indigo               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2971fe631ad5f8344fa414959f5a42fc984b1d73 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-indigo\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-indigo-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Renderer - Indigo                  | quilted_fabric_renderer_indigo               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 2971fe631ad5f8344fa414959f5a42fc984b1d73 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-indigo\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-indigo-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Renderer API (v1)                  | quilted_fabric_renderer_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 4d05c17020e4e5aef2c9ecccce994c2c04469b72 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Renderer API (v1)                  | quilted_fabric_renderer_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 4d05c17020e4e5aef2c9ecccce994c2c04469b72 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Renderer Registries (v1)           | quilted_fabric_renderer_registries_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 87b91bba7d2ab1d4fd1b801c7eb98fdfe5db08f4 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-registries-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-registries-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Renderer Registries (v1)           | quilted_fabric_renderer_registries_v1        | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 87b91bba7d2ab1d4fd1b801c7eb98fdfe5db08f4 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-registries-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-registries-v1-11.0.0-alpha.3+0.100.7-1.21.jar               |                                             |
+| Quilted Fabric Rendering (v0)                     | quilted_fabric_rendering_v0                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | f7872af13c121857f4084da6e2a19b8c39248e6a | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v0-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Rendering (v0)                     | quilted_fabric_rendering_v0                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | f7872af13c121857f4084da6e2a19b8c39248e6a | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v0-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Rendering (v1)                     | quilted_fabric_rendering_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 708728084c172ecd46b862a4f24e0ea39f7b54e9 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Rendering (v1)                     | quilted_fabric_rendering_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 708728084c172ecd46b862a4f24e0ea39f7b54e9 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Rendering Data Attachment (v1)     | quilted_fabric_rendering_data_attachment_v1  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c7bde7a3a1af4cc82139fa5e94a4524ee06e7f50 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-data-attachment-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-data-attachment-v1-11.0.0-alpha.3+0.100.7-1.21.jar   |                                             |
+| Quilted Fabric Rendering Data Attachment (v1)     | quilted_fabric_rendering_data_attachment_v1  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c7bde7a3a1af4cc82139fa5e94a4524ee06e7f50 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-data-attachment-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-data-attachment-v1-11.0.0-alpha.3+0.100.7-1.21.jar   |                                             |
+| Quilted Fabric Rendering Fluids (v1)              | quilted_fabric_rendering_fluids_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c63c1d066c79b71417626af1a68b0ed7a1bc829b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-fluids-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-fluids-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric Rendering Fluids (v1)              | quilted_fabric_rendering_fluids_v1           | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | c63c1d066c79b71417626af1a68b0ed7a1bc829b | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-fluids-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-fluids-v1-11.0.0-alpha.3+0.100.7-1.21.jar                     |                                             |
+| Quilted Fabric Resource Conditions API (v1)       | quilted_fabric_resource_conditions_api_v1    | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d7c3fc5eff030865b28fbad278bbef693b8c9d94 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-conditions-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-conditions-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar       |                                             |
+| Quilted Fabric Resource Conditions API (v1)       | quilted_fabric_resource_conditions_api_v1    | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | d7c3fc5eff030865b28fbad278bbef693b8c9d94 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-conditions-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-conditions-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar       |                                             |
+| Quilted Fabric Resource Loader (v0)               | quilted_fabric_resource_loader_v0            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | ca9774addfddb7f56577f68d6b9987ce2636ec77 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-loader-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-loader-v0-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Resource Loader (v0)               | quilted_fabric_resource_loader_v0            | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | ca9774addfddb7f56577f68d6b9987ce2636ec77 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-loader-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-loader-v0-11.0.0-alpha.3+0.100.7-1.21.jar                       |                                             |
+| Quilted Fabric Screen API (v1)                    | quilted_fabric_screen_api_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 38c565c08b5129535d48b4aebfc621fdabb63088 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Screen API (v1)                    | quilted_fabric_screen_api_v1                 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 38c565c08b5129535d48b4aebfc621fdabb63088 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                 |                                             |
+| Quilted Fabric Screen Handler API (v1)            | quilted_fabric_screen_handler_api_v1         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 520296a52da7d3dbf27a78c53f56028079d03908 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-handler-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-handler-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Screen Handler API (v1)            | quilted_fabric_screen_handler_api_v1         | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 520296a52da7d3dbf27a78c53f56028079d03908 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-handler-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-handler-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                 |                                             |
+| Quilted Fabric Sound API (v1)                     | quilted_fabric_sound_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b09fac387b85fed91ae235efa07d17f413963304 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-sound-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-sound-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Sound API (v1)                     | quilted_fabric_sound_api_v1                  | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | b09fac387b85fed91ae235efa07d17f413963304 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-sound-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-sound-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                                   |                                             |
+| Quilted Fabric Transfer API (v1)                  | quilted_fabric_transfer_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 1921312dc2f51a86a4f64f50aa15f8f132660618 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transfer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transfer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Transfer API (v1)                  | quilted_fabric_transfer_api_v1               | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | 1921312dc2f51a86a4f64f50aa15f8f132660618 | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transfer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transfer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar                             |                                             |
+| Quilted Fabric Transitive Access Wideners (v1)    | quilted_fabric_transitive_access_wideners_v1 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | e7d7f8cf01efe4e6aae8b450a46e5f68b5e7c57c | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transitive-access-wideners-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transitive-access-wideners-v1-11.0.0-alpha.3+0.100.7-1.21.jar |                                             |
+| Quilted Fabric Transitive Access Wideners (v1)    | quilted_fabric_transitive_access_wideners_v1 | 11.0.0-alpha.3+0.100.7-1.21 | quilt_loader          | ..    | e7d7f8cf01efe4e6aae8b450a46e5f68b5e7c57c | D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transitive-access-wideners-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transitive-access-wideners-v1-11.0.0-alpha.3+0.100.7-1.21.jar |                                             |
+|---------------------------------------------------|----------------------------------------------|-----------------------------|-----------------------|-------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+
+
+-- Mod Details --
+
+Joined path [4]:
+ - 'D:\GitHub\scytheto\.gradle\quilt-loom-cache\minecraftMaven\net\minecraft\minecraft-merged-d10fde7a2b\1.21-org.quiltmc.quilt-mappings.1_21.1.21+build.12-v2\minecraft-merged-d10fde7a2b-1.21-org.quiltmc.quilt-mappings.1_21.1.21+build.12-v2.jar'
+ - '<user>\.gradle\caches\modules-2\files-2.1\com.mojang\datafixerupper\8.0.16\67d4de6d7f95d89bcf5862995fb854ebaec02a34\datafixerupper-8.0.16.jar'
+ - '<user>\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\6.0.54\de8bc95660e1b2fe8793fd427a7a10dcec5b3ea7\authlib-6.0.54.jar'
+ - '<user>\.gradle\caches\modules-2\files-2.1\com.mojang\brigadier\1.2.9\73e324f2ee541493a5179abf367237faa782ed21\brigadier-1.2.9.jar'
+mod:
+###############################
+#  Loaded by  'quilt_loader'  #
+#  Name     = 'Minecraft'     #
+#  ID       = 'minecraft'     #
+#  Version  = '1.21'          #
+#  LoadType = IF_REQUIRED     #
+#  Depends on 'java' [21, ∞)  #
+###############################
+
+C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot:
+###########################################
+#  Loaded by  'quilt_loader'              #
+#  Name     = 'OpenJDK 64-Bit Server VM'  #
+#  ID       = 'java'                      #
+#  Version  = '21'                        #
+#  LoadType = IF_REQUIRED                 #
+###########################################
+
+<user>\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-fabric\0.3.5\3b577be20ea942610b3045e4f0cd909fa415a9d3\mixinextras-fabric-0.3.5.jar:
+#########################################################
+#  Loaded by  'quilted_fabric_loader'                   #
+#  Name     = 'MixinExtras'                             #
+#  ID       = 'mixinextras'                             #
+#  Version  = '0.3.5'                                   #
+#  LoadType = IF_POSSIBLE                               #
+#  Provides   'com_github_llamalad7_mixinextras' 0.3.5  #
+#  Depends on 'fabricloader' [0.14.25, ∞)               #
+#########################################################
+
+<user>\.gradle\caches\modules-2\files-2.1\org.quiltmc\quilt-loader\0.26.4-beta.1\42afa527138e9354e78d3c402617480bd7c91b29\quilt-loader-0.26.4-beta.1.jar:
+###############################################################
+#  Loaded by  'quilt_loader'                                  #
+#  Name     = 'Quilt Loader'                                  #
+#  ID       = 'quilt_loader'                                  #
+#  Version  = '0.26.4-beta.1'                                 #
+#  LoadType = IF_REQUIRED                                     #
+#  Provides   'fabricloader' 0.15.11                          #
+#  Depends on 'mixinextras' (-∞, ∞)                           #
+#                                                             #
+#  Contained Jars (1):                                        #
+#                                                             #
+#  /META-INF/jars/mixinextras-fabric-0.3.5.jar:               #
+#  +-------------------------------------------------------+  #
+#  |  Loaded by  'quilted_fabric_loader'                   |  #
+#  |  Name     = 'MixinExtras'                             |  #
+#  |  ID       = 'mixinextras'                             |  #
+#  |  Version  = '0.3.5'                                   |  #
+#  |  LoadType = IF_POSSIBLE                               |  #
+#  |  Provides   'com_github_llamalad7_mixinextras' 0.3.5  |  #
+#  |  Depends on 'fabricloader' [0.14.25, ∞)               |  #
+#  +-------------------------------------------------------+  #
+#                                                             #
+###############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\qsl\core\crash_info\10.0.0-alpha.1+1.21\crash_info-10.0.0-alpha.1+1.21.jar:
+######################################################
+#  Loaded by  'quilt_loader'                         #
+#  Name     = 'Quilt Crash Info'                     #
+#  ID       = 'quilt_crash_info'                     #
+#  Version  = '10.0.0-alpha.1+1.21'                  #
+#  LoadType = IF_POSSIBLE                            #
+#  Depends on 'quilt_loader' [0.25.0, ∞)             #
+#  Depends on 'minecraft' [1.21, 1.21]               #
+#  Depends on 'quilt_base' [10.0.0-alpha.1+1.21, ∞)  #
+######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\qsl\core\qsl_base\10.0.0-alpha.1+1.21\qsl_base-10.0.0-alpha.1+1.21.jar:
+###########################################
+#  Loaded by  'quilt_loader'              #
+#  Name     = 'Quilt Base API'            #
+#  ID       = 'quilt_base'                #
+#  Version  = '10.0.0-alpha.1+1.21'       #
+#  LoadType = IF_POSSIBLE                 #
+#  Depends on 'quilt_loader' [0.25.0, ∞)  #
+#  Depends on 'minecraft' [1.21, 1.21]    #
+###########################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-base\11.0.0-alpha.3+0.100.7-1.21\fabric-api-base-11.0.0-alpha.3+0.100.7-1.21.jar:
+####################################################
+#  Loaded by  'quilt_loader'                       #
+#  Name     = 'Quilted Fabric API Base'            #
+#  ID       = 'quilted_fabric_api_base'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'        #
+#  LoadType = ALWAYS                               #
+#  Provides   'fabric-api-base' 0.4.42+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)           #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)    #
+####################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-api-lookup-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-api-lookup-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#############################################################
+#  Loaded by  'quilt_loader'                                #
+#  Name     = 'Quilted Fabric API Lookup API (v1)'          #
+#  ID       = 'quilted_fabric_api_lookup_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                 #
+#  LoadType = ALWAYS                                        #
+#  Provides   'fabric-api-lookup-api-v1' 1.6.67+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                    #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)             #
+#############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-biome-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-biome-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#########################################################
+#  Loaded by  'quilt_loader'                            #
+#  Name     = 'Quilted Fabric Biome API (v1)'           #
+#  ID       = 'quilted_fabric_biome_api_v1'             #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'             #
+#  LoadType = ALWAYS                                    #
+#  Provides   'fabric-biome-api-v1' 13.0.29+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)         #
+#########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-block-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+########################################################
+#  Loaded by  'quilt_loader'                           #
+#  Name     = 'Quilted Fabric Block API (v1)'          #
+#  ID       = 'quilted_fabric_block_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'            #
+#  LoadType = ALWAYS                                   #
+#  Provides   'fabric-block-api-v1' 1.0.22+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)               #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)        #
+########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-block-view-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-block-view-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar:
+#############################################################
+#  Loaded by  'quilt_loader'                                #
+#  Name     = 'Quilted Fabric BlockView API (v2)'           #
+#  ID       = 'quilted_fabric_block_view_api_v2'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                 #
+#  LoadType = ALWAYS                                        #
+#  Provides   'fabric-block-view-api-v2' 1.0.10+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                    #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)             #
+#############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-blockrenderlayer-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-blockrenderlayer-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+####################################################################
+#  Loaded by  'quilt_loader'                                       #
+#  Name     = 'Quilted Fabric BlockRenderLayer Registration (v1)'  #
+#  ID       = 'quilted_fabric_blockrenderlayer_v1'                 #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                        #
+#  LoadType = ALWAYS                                               #
+#  Provides   'fabric-blockrenderlayer-v1' 1.1.52+8ea94299d1       #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                           #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                    #
+####################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-client-tags-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-client-tags-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##############################################################
+#  Loaded by  'quilt_loader'                                 #
+#  Name     = 'Quilted Fabric Client Tags'                   #
+#  ID       = 'quilted_fabric_client_tags_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                  #
+#  LoadType = ALWAYS                                         #
+#  Provides   'fabric-client-tags-api-v1' 1.1.15+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                     #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)              #
+##############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Command API (v1)'          #
+#  ID       = 'quilted_fabric_command_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-command-api-v1' 1.2.49+f71b366fd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-command-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-command-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Command API (v2)'          #
+#  ID       = 'quilted_fabric_command_api_v2'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-command-api-v2' 2.2.28+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-commands-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-commands-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+#######################################################
+#  Loaded by  'quilt_loader'                          #
+#  Name     = 'Quilted Fabric Commands (v0)'          #
+#  ID       = 'quilted_fabric_commands_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'           #
+#  LoadType = ALWAYS                                  #
+#  Provides   'fabric-commands-v0' 0.2.66+df3654b3d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)              #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)       #
+#######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-content-registries-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-content-registries-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+#################################################################
+#  Loaded by  'quilt_loader'                                    #
+#  Name     = 'Quilted Fabric Content Registries (v0)'          #
+#  ID       = 'quilted_fabric_content_registries_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                     #
+#  LoadType = ALWAYS                                            #
+#  Provides   'fabric-content-registries-v0' 8.0.15+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                        #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                 #
+#################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##############################################################
+#  Loaded by  'quilt_loader'                                 #
+#  Name     = 'Quilted Fabric Convention Tags'               #
+#  ID       = 'quilted_fabric_convention_tags_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                  #
+#  LoadType = ALWAYS                                         #
+#  Provides   'fabric-convention-tags-v1' 2.0.18+7f945d5bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                     #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)              #
+##############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-convention-tags-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-convention-tags-v2-11.0.0-alpha.3+0.100.7-1.21.jar:
+#############################################################
+#  Loaded by  'quilt_loader'                                #
+#  Name     = 'Quilted Fabric Convention Tags (v2)'         #
+#  ID       = 'quilted_fabric_convention_tags_v2'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                 #
+#  LoadType = ALWAYS                                        #
+#  Provides   'fabric-convention-tags-v2' 2.4.2+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                    #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)             #
+#############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-crash-report-info-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-crash-report-info-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+################################################################
+#  Loaded by  'quilt_loader'                                   #
+#  Name     = 'Quilted Fabric Crash Report Info (v1)'          #
+#  ID       = 'quilted_fabric_crash_report_info_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                    #
+#  LoadType = ALWAYS                                           #
+#  Provides   'fabric-crash-report-info-v1' 0.2.29+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                       #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                #
+################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-attachment-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-attachment-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##################################################################
+#  Loaded by  'quilt_loader'                                     #
+#  Name     = 'Quilted Fabric Data Attachment API (v1)'          #
+#  ID       = 'quilted_fabric_data_attachment_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                      #
+#  LoadType = ALWAYS                                             #
+#  Provides   'fabric-data-attachment-api-v1' 1.1.25+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                         #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                  #
+##################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-data-generation-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-data-generation-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+###################################################################
+#  Loaded by  'quilt_loader'                                      #
+#  Name     = 'Quilted Fabric Data Generation API (v1)'           #
+#  ID       = 'quilted_fabric_data_generation_api_v1'             #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                       #
+#  LoadType = ALWAYS                                              #
+#  Provides   'fabric-data-generation-api-v1' 20.2.12+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                          #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                   #
+###################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-dimensions-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-dimensions-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+########################################################
+#  Loaded by  'quilt_loader'                           #
+#  Name     = 'Quilted Fabric Dimensions API (v1)'     #
+#  ID       = 'quilted_fabric_dimensions_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'            #
+#  LoadType = ALWAYS                                   #
+#  Provides   'fabric-dimensions-v1' 4.0.0+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)               #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)        #
+########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-entity-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-entity-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+############################################################
+#  Loaded by  'quilt_loader'                               #
+#  Name     = 'Quilted Fabric Entity Events (v1)'          #
+#  ID       = 'quilted_fabric_entity_events_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                #
+#  LoadType = ALWAYS                                       #
+#  Provides   'fabric-entity-events-v1' 1.6.12+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                   #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)            #
+############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-events-interaction-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-events-interaction-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+#################################################################
+#  Loaded by  'quilt_loader'                                    #
+#  Name     = 'Quilted Fabric Events Interaction (v0)'          #
+#  ID       = 'quilted_fabric_events_interaction_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                     #
+#  LoadType = ALWAYS                                            #
+#  Provides   'fabric-events-interaction-v0' 0.7.10+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                        #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                 #
+#################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-game-rule-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-game-rule-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+############################################################
+#  Loaded by  'quilt_loader'                               #
+#  Name     = 'Quilted Fabric Game Rule API (v1)'          #
+#  ID       = 'quilted_fabric_game_rule_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                #
+#  LoadType = ALWAYS                                       #
+#  Provides   'fabric-game-rule-api-v1' 1.0.53+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                   #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)            #
+############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-gametest-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-gametest-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Game Test API (v1)'        #
+#  ID       = 'quilted_fabric_gametest_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-gametest-api-v1' 2.0.3+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#######################################################
+#  Loaded by  'quilt_loader'                          #
+#  Name     = 'Quilted Fabric Item API (v1)'          #
+#  ID       = 'quilted_fabric_item_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'           #
+#  LoadType = ALWAYS                                  #
+#  Provides   'fabric-item-api-v1' 11.0.0+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)              #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)       #
+#######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-item-group-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-item-group-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+############################################################
+#  Loaded by  'quilt_loader'                               #
+#  Name     = 'Quilted Fabric Item Group API (v1)'         #
+#  ID       = 'quilted_fabric_item_group_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                #
+#  LoadType = ALWAYS                                       #
+#  Provides   'fabric-item-group-api-v1' 4.1.3+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                   #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)            #
+############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-key-binding-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-key-binding-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##############################################################
+#  Loaded by  'quilt_loader'                                 #
+#  Name     = 'Quilted Fabric Key Binding API (v1)'          #
+#  ID       = 'quilted_fabric_key_binding_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                  #
+#  LoadType = ALWAYS                                         #
+#  Provides   'fabric-key-binding-api-v1' 1.0.47+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                     #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)              #
+##############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-keybindings-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-keybindings-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Key Bindings (v0)'         #
+#  ID       = 'quilted_fabric_keybindings_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-keybindings-v0' 0.2.45+df3654b3d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-lifecycle-events-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-lifecycle-events-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+###############################################################
+#  Loaded by  'quilt_loader'                                  #
+#  Name     = 'Quilted Fabric Lifecycle Events (v1)'          #
+#  ID       = 'quilted_fabric_lifecycle_events_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                   #
+#  LoadType = ALWAYS                                          #
+#  Provides   'fabric-lifecycle-events-v1' 2.3.11+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                      #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)               #
+###############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v2\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v2-11.0.0-alpha.3+0.100.7-1.21.jar:
+#######################################################
+#  Loaded by  'quilt_loader'                          #
+#  Name     = 'Quilted Fabric Loot API (v2)'          #
+#  ID       = 'quilted_fabric_loot_api_v2'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'           #
+#  LoadType = ALWAYS                                  #
+#  Provides   'fabric-loot-api-v2' 3.0.13+3f89f5a5d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)              #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)       #
+#######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-loot-api-v3\11.0.0-alpha.3+0.100.7-1.21\fabric-loot-api-v3-11.0.0-alpha.3+0.100.7-1.21.jar:
+######################################################
+#  Loaded by  'quilt_loader'                         #
+#  Name     = 'Quilted Fabric Loot API (v3)'         #
+#  ID       = 'quilted_fabric_loot_api_v3'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'          #
+#  LoadType = ALWAYS                                 #
+#  Provides   'fabric-loot-api-v3' 1.0.1+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)             #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)      #
+######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-message-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-message-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Message API (v1)'          #
+#  ID       = 'quilted_fabric_message_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-message-api-v1' 6.0.13+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-model-loading-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-model-loading-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+###############################################################
+#  Loaded by  'quilt_loader'                                  #
+#  Name     = 'Quilted Fabric Model Loading API (v1)'         #
+#  ID       = 'quilted_fabric_model_loading_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                   #
+#  LoadType = ALWAYS                                          #
+#  Provides   'fabric-model-loading-api-v1' 2.0.0+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                      #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)               #
+###############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-networking-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-networking-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+############################################################
+#  Loaded by  'quilt_loader'                               #
+#  Name     = 'Quilted Fabric Networking API (v1)'         #
+#  ID       = 'quilted_fabric_networking_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                #
+#  LoadType = ALWAYS                                       #
+#  Provides   'fabric-networking-api-v1' 4.2.0+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                   #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)            #
+############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-object-builder-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-object-builder-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##################################################################
+#  Loaded by  'quilt_loader'                                     #
+#  Name     = 'Quilted Fabric Object Builder API (v1)'           #
+#  ID       = 'quilted_fabric_object_builder_api_v1'             #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                      #
+#  LoadType = ALWAYS                                             #
+#  Provides   'fabric-object-builder-api-v1' 15.1.13+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                         #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                  #
+##################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-particles-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-particles-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#######################################################
+#  Loaded by  'quilt_loader'                          #
+#  Name     = 'Quilted Fabric Particles (v1)'         #
+#  ID       = 'quilted_fabric_particles_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'           #
+#  LoadType = ALWAYS                                  #
+#  Provides   'fabric-particles-v1' 4.0.2+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)              #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)       #
+#######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-recipe-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-recipe-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#########################################################
+#  Loaded by  'quilt_loader'                            #
+#  Name     = 'Quilted Fabric Recipe API (v1)'          #
+#  ID       = 'quilted_fabric_recipe_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'             #
+#  LoadType = ALWAYS                                    #
+#  Provides   'fabric-recipe-api-v1' 5.0.10+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)         #
+#########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-registry-sync-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-registry-sync-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+############################################################
+#  Loaded by  'quilt_loader'                               #
+#  Name     = 'Quilted Fabric Registry Sync (v0)'          #
+#  ID       = 'quilted_fabric_registry_sync_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                #
+#  LoadType = ALWAYS                                       #
+#  Provides   'fabric-registry-sync-v0' 5.0.25+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                   #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)            #
+############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Renderer API (v1)'         #
+#  ID       = 'quilted_fabric_renderer_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-renderer-api-v1' 3.3.0+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-indigo\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-indigo-11.0.0-alpha.3+0.100.7-1.21.jar:
+##########################################################
+#  Loaded by  'quilt_loader'                             #
+#  Name     = 'Quilted Fabric Renderer - Indigo'         #
+#  ID       = 'quilted_fabric_renderer_indigo'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'              #
+#  LoadType = ALWAYS                                     #
+#  Provides   'fabric-renderer-indigo' 1.6.5+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                 #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)          #
+##########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-renderer-registries-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-renderer-registries-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##################################################################
+#  Loaded by  'quilt_loader'                                     #
+#  Name     = 'Quilted Fabric Renderer Registries (v1)'          #
+#  ID       = 'quilted_fabric_renderer_registries_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                      #
+#  LoadType = ALWAYS                                             #
+#  Provides   'fabric-renderer-registries-v1' 3.2.68+df3654b3d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                         #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                  #
+##################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-data-attachment-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-data-attachment-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+########################################################################
+#  Loaded by  'quilt_loader'                                           #
+#  Name     = 'Quilted Fabric Rendering Data Attachment (v1)'          #
+#  ID       = 'quilted_fabric_rendering_data_attachment_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                            #
+#  LoadType = ALWAYS                                                   #
+#  Provides   'fabric-rendering-data-attachment-v1' 0.3.48+73761d2ed1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                               #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                        #
+########################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-fluids-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-fluids-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+##############################################################
+#  Loaded by  'quilt_loader'                                 #
+#  Name     = 'Quilted Fabric Rendering Fluids (v1)'         #
+#  ID       = 'quilted_fabric_rendering_fluids_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                  #
+#  LoadType = ALWAYS                                         #
+#  Provides   'fabric-rendering-fluids-v1' 3.1.6+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                     #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)              #
+##############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+########################################################
+#  Loaded by  'quilt_loader'                           #
+#  Name     = 'Quilted Fabric Rendering (v0)'          #
+#  ID       = 'quilted_fabric_rendering_v0'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'            #
+#  LoadType = ALWAYS                                   #
+#  Provides   'fabric-rendering-v0' 1.1.71+df3654b3d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)               #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)        #
+########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-rendering-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-rendering-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#######################################################
+#  Loaded by  'quilt_loader'                          #
+#  Name     = 'Quilted Fabric Rendering (v1)'         #
+#  ID       = 'quilted_fabric_rendering_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'           #
+#  LoadType = ALWAYS                                  #
+#  Provides   'fabric-rendering-v1' 5.0.5+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)              #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)       #
+#######################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-conditions-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-conditions-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#####################################################################
+#  Loaded by  'quilt_loader'                                        #
+#  Name     = 'Quilted Fabric Resource Conditions API (v1)'         #
+#  ID       = 'quilted_fabric_resource_conditions_api_v1'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                         #
+#  LoadType = ALWAYS                                                #
+#  Provides   'fabric-resource-conditions-api-v1' 4.2.1+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                            #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                     #
+#####################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-resource-loader-v0\11.0.0-alpha.3+0.100.7-1.21\fabric-resource-loader-v0-11.0.0-alpha.3+0.100.7-1.21.jar:
+#############################################################
+#  Loaded by  'quilt_loader'                                #
+#  Name     = 'Quilted Fabric Resource Loader (v0)'         #
+#  ID       = 'quilted_fabric_resource_loader_v0'           #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                 #
+#  LoadType = ALWAYS                                        #
+#  Provides   'fabric-resource-loader-v0' 1.2.0+1006ae6bd1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                    #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)             #
+#############################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#########################################################
+#  Loaded by  'quilt_loader'                            #
+#  Name     = 'Quilted Fabric Screen API (v1)'          #
+#  ID       = 'quilted_fabric_screen_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'             #
+#  LoadType = ALWAYS                                    #
+#  Provides   'fabric-screen-api-v1' 2.0.24+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)         #
+#########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-screen-handler-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-screen-handler-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#################################################################
+#  Loaded by  'quilt_loader'                                    #
+#  Name     = 'Quilted Fabric Screen Handler API (v1)'          #
+#  ID       = 'quilted_fabric_screen_handler_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                     #
+#  LoadType = ALWAYS                                            #
+#  Provides   'fabric-screen-handler-api-v1' 1.3.82+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                        #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                 #
+#################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-sound-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-sound-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+########################################################
+#  Loaded by  'quilt_loader'                           #
+#  Name     = 'Quilted Fabric Sound API (v1)'          #
+#  ID       = 'quilted_fabric_sound_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'            #
+#  LoadType = ALWAYS                                   #
+#  Provides   'fabric-sound-api-v1' 1.0.23+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)               #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)        #
+########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transfer-api-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transfer-api-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+###########################################################
+#  Loaded by  'quilt_loader'                              #
+#  Name     = 'Quilted Fabric Transfer API (v1)'          #
+#  ID       = 'quilted_fabric_transfer_api_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'               #
+#  LoadType = ALWAYS                                      #
+#  Provides   'fabric-transfer-api-v1' 5.1.15+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                  #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)           #
+###########################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\fabric-transitive-access-wideners-v1\11.0.0-alpha.3+0.100.7-1.21\fabric-transitive-access-wideners-v1-11.0.0-alpha.3+0.100.7-1.21.jar:
+#########################################################################
+#  Loaded by  'quilt_loader'                                            #
+#  Name     = 'Quilted Fabric Transitive Access Wideners (v1)'          #
+#  ID       = 'quilted_fabric_transitive_access_wideners_v1'            #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'                             #
+#  LoadType = ALWAYS                                                    #
+#  Provides   'fabric-transitive-access-wideners-v1' 6.0.12+8ea94299d1  #
+#  Depends on 'quilt_loader' [0.25.0, ∞)                                #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)                         #
+#########################################################################
+
+D:\GitHub\scytheto\.gradle\quilt-loom-cache\remapped_mods\org_quiltmc_quilt_mappings_1_21_1_21_build_12_v2\org\quiltmc\quilted-fabric-api\quilted-fabric-api\11.0.0-alpha.3+0.100.7-1.21\quilted-fabric-api-11.0.0-alpha.3+0.100.7-1.21.jar:
+##################################################
+#  Loaded by  'quilt_loader'                     #
+#  Name     = 'Quilted Fabric API'               #
+#  ID       = 'quilted_fabric_api'               #
+#  Version  = '11.0.0-alpha.3+0.100.7-1.21'      #
+#  LoadType = ALWAYS                             #
+#  Provides   'fabric-api' 0.100.7               #
+#             'fabric' 0.100.7                   #
+#  Depends on 'quilt_loader' [0.25.0, ∞)         #
+#  Depends on 'minecraft' [1.20.5- <1.20.7-, ∞)  #
+##################################################
+
+
+
+---- end of report ----

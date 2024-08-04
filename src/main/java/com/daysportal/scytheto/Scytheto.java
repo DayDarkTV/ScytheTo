@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Scytheto implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("Scythe To Meet You");
+    public static final Logger LOGGER = LoggerFactory.getLogger("scytheto");
 
     @Override
     public void onInitialize(ModContainer mod) {
