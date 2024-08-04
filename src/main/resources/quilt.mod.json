@@ -1,0 +1,37 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "scytheto",
+        "version": "${version}",
+        "metadata": {
+            "name": "Scythe To Meet You",
+            "description": "A mod adding scythes as both weapons and tools!",
+            "contributors": {
+                "DayDarkTV": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/example_mod/icon.png",
+            "license": "PolyForm-Shield-1.0.0"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "com.daysportal.scytheto.Scytheto"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "scytheto.mixins.json"
+}
